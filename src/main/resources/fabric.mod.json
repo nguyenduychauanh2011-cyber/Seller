@@ -1,36 +1,20 @@
 {
   "schemaVersion": 1,
-  "id": "addon-template",
+  "id": "ah-sell",
   "version": "${version}",
-  "name": "Addon Template",
-  "description": "An addon template for Meteor Client addons.",
-  "authors": [
-    "seasnail"
-  ],
-  "contact": {
-    "sources": "https://github.com/MeteorDevelopment/meteor-addon-template"
-  },
-  "icon": "assets/template/icon.png",
+  "name": "AH Sell",
+  "description": "Auto AH sellmulti loop addon for KingSMP / Meteor 1.21.11",
+  "authors": ["yogurt"],
+  "contact": {},
+  "license": "MIT",
   "environment": "client",
   "entrypoints": {
-    "meteor": [
-      "com.example.addon.AddonTemplate"
-    ]
-  },
-  "mixins": [
-    "addon-template.mixins.json"
-  ],
-  "custom": {
-    "meteor-client:color": "225,25,25",
-    "modmenu": {
-      "parent": {
-        "id": "meteor-client"
-      }
-    }
+    "meteor": ["yogurt.ahsell.AhSellAddon"]
   },
   "depends": {
-    "java": ">=${jdk_version}",
-    "minecraft": "${minecraft_version}",
+    "fabricloader": ">=0.18.2",
+    "minecraft": "1.21.11",
+    "java": ">=21",
     "meteor-client": "*"
   }
 }
